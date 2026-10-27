@@ -1,0 +1,26 @@
+name: pfdr
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  # QC and trimming
+  - fastqc=0.13
+  - fastp=1.4
+  - multiqc=1.35
+  # host (human) read removal
+  - hostile=2.0
+  # mapping and BAM handling
+  - bwa=0.7.19
+  - samtools=1.24
+  - htslib=1.24
+  - bcftools=1.24
+  # coverage
+  - mosdepth=0.3
+  # variant calling
+  - gatk4=4.6.2
+  # utilities
+  - seqtk=1.5
+  - wgsim          # only used by the instructor self-test in tests/
+  - pandas
+  - matplotlib
